@@ -1,0 +1,28 @@
+﻿<Window x:Class="STMRRPP_PT2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:STMRRPP_PT2"
+        mc:Ignorable="d"
+        Title="Граф компьютерной сети" SizeToContent="WidthAndHeight" ResizeMode="NoResize">
+    <Grid x:Name="grid_Main" Width="600" Height="600" Background="#FF1A1A1A">
+        <Canvas x:Name="cnvs_Main" Margin="50,50,50,50">
+            <Canvas.Background>
+                <SolidColorBrush Color="White"></SolidColorBrush>
+                <!--
+                <VisualBrush TileMode="Tile" Stretch="Uniform" Viewport="10,10,10,10" ViewportUnits="Absolute">
+                    <VisualBrush.Visual>
+                        <Rectangle Width="10" Height="10" Fill="White" Stroke="Black" StrokeThickness="0.1"/>
+                    </VisualBrush.Visual>
+                </VisualBrush>-->
+            </Canvas.Background>            
+        </Canvas>
+        <Button x:Name="btn_Start" Content="Запуск" HorizontalAlignment="Left" Margin="130,10,0,0" VerticalAlignment="Top" FontFamily="Consolas" FontSize="18" Padding="5,3,5,3" Click="btn_Start_Click" Height="30"/>
+        <ComboBox x:Name="cmb_Main" HorizontalAlignment="Left" Margin="280,10,0,0" VerticalAlignment="Top" Width="200" FontSize="18" FontFamily="Consolas" Padding="5,3,5,3" Height="30">
+            <ComboBoxItem x:Name="cmb_Item_1" Content="Соединение вершин" FontSize="18" FontFamily="Consolas" IsSelected="True"/>
+            <ComboBoxItem x:Name="cmb_Item_2" Content="Алгоритм Крускала" FontSize="18" FontFamily="Consolas"/>
+        </ComboBox>
+
+    </Grid>
+</Window>
